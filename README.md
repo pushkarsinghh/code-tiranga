@@ -18,7 +18,6 @@ Features an animated tricolor flag, patriotic quotes, fireworks, and a countdown
 
 ## 📂 Folder Structure
 code-tiranga/  
-│  
 ├── index.html  
 ├── style.css     
 ├── script.js   
