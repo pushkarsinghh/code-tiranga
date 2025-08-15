@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Tiranga – Freedom Day</title>
+  <meta name="description" content="Interactive, animated, and responsive Independence Day mini site." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Fira+Code:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header aria-label="Primary">
+    <nav>
+      <div class="brand" aria-label="Brand">
+        <span class="dot s"></span><span class="dot w"></span><span class="dot g"></span>
+        <span>Code Tiranga</span>
+      </div>
+      <div class="actions">
+        <button class="btn" id="launchFireworks" aria-label="Launch Fireworks">🎆 Launch Fireworks</button>
+        <button class="btn" id="toggleAnthem" aria-label="Play/Pause Anthem">🎵 Anthem</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div>
+        <p class="kicker">15 August • Independence Day</p>
+        <h1>Celebrating the Spirit of Freedom 🇮🇳</h1>
+        <p class="sub">Interactive tricolor, elegant animations, and a heartfelt message — crafted with love for
+          the Code Tiranga Challenge.</p>
+        <p class="quote" aria-live="polite" id="quote">"Freedom is never dear at any price. It is the breath of
+          life." — <span style="opacity:.9">Mahatma Gandhi</span></p>
+        <div style="height:14px"></div>
+        <div class="countdown" aria-label="Countdown to next Independence Day">
+          <span class="meta">Next Independence Day in:</span>
+          <div class="tick"><b id="d">00</b><span class="meta">Days</span></div>
+          <div class="tick"><b id="h">00</b><span class="meta">Hours</span></div>
+          <div class="tick"><b id="m">00</b><span class="meta">Minutes</span></div>
+          <div class="tick"><b id="s">00</b><span class="meta">Seconds</span></div>
+        </div>
+      </div>
+
+      <!-- FLAG -->
+      <div class="flag-wrap">
+        <div class="flag" role="img" aria-label="Animated Indian National Flag">
+          <div class="stripe top"></div>
+          <div class="stripe mid"></div>
+          <div class="stripe bot"></div>
+          <img src="chakra.png" alt="Ashoka Chakra" class="chakra" />
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMATION CARDS -->
+    <section id="about" class="grid" aria-label="Feature Cards">
+      <article class="card">
+        <h3>"Swaraj is my birthright, and I shall have it."</h3>
+        <p class="meta">— Bal Gangadhar Tilak</p>
+      </article>
+      <article class="card">
+        <h3>"A nation's culture resides in the hearts and in the soul of its people."</h3>
+        <p class="meta">— Mahatma Gandhi</p>
+      </article>
+      <article class="card">
+        <h3>"Give me blood, and I shall give you freedom!"</h3>
+        <p class="meta">— Subhas Chandra Bose</p>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:1rem" aria-label="Patriotic Message">
+      <h3>“Where the mind is without fear and the head is held high…”</h3>
+      <p class="meta">— Rabindranath Tagore</p>
+    </section>
+  </main>
+
+  <footer>Jai Hind • Jai Bharat 🇮🇳</footer>
+
+  <!-- Fireworks Canvas -->
+  <canvas id="fw"></canvas>
+
+  <!-- Anthem Audio -->
+  <audio id="anthem" src="anthem.mp3" preload="none"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
