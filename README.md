@@ -33,4 +33,4 @@ code-tiranga/
    ```
 2. Open `index.html` in your browser.  
 
-3. Visit [Code Tiranga Website]([https://pushkarsinghh.github.io/code-tiranga/](https://code-tiranga.netlify.app/)).
+3. Visit [Code Tiranga Website](https://code-tiranga.netlify.app/).
